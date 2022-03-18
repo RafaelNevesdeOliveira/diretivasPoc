@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Http</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']" routerLinkActive="active">ngIf <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngswitch']" routerLinkActive="active">ngSwitch</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngfor']" routerLinkActive="active">ngFor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngclass']" routerLinkActive="active">ngClass</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngstyle']" routerLinkActive="active">ngStyle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngcontent']" routerLinkActive="active">ngContent</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/input-property-binding']" routerLinkActive="active">Input e Property Binding</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ngelse']" routerLinkActive="active">ngElse</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
