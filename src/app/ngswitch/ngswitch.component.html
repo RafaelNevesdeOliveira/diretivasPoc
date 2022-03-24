@@ -1,1 +1,25 @@
-<p>ngswitch works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 my-2">
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link"
+      [class.ative]="aba =='home'"
+      (click)="aba = 'home'"
+      >Home</a>
+      <a class="nav-item nav-link"
+      [class.ative]="aba =='sobre'"
+      (click)="aba = 'sobre'"
+      >Sobre</a>
+      <a class="nav-item nav-link"
+      [class.ative]="aba =='contato'"
+      (click)="aba = 'contato'"
+      >Contato</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" [ngSwitch]="aba">
+  <p *ngSwitchDefault="'home'">Home</p>
+  <p *ngSwitchCase="'sobre'">Sobre</p>
+  <p *ngSwitchCase="'contato'">Contato</p>
+  <p></p>
+</div>

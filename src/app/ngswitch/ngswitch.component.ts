@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgswitchComponent implements OnInit {
 
+  aba: string = 'home';
+
   constructor() { }
 
   ngOnInit(): void {

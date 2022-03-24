@@ -1,1 +1,22 @@
-<p>ngclass works!</p>
+
+<h2>Property binding</h2>
+<h1>
+  <i
+    [class.bi-star]="!isFavorite"
+    [class.bi-star-fill]="isFavorite"
+    (click)="toggleFavorite()"
+  ></i>
+</h1>
+<br>
+
+<h2>ngClass</h2>
+
+<h1>
+  <i
+  [ngClass]="{
+    'bi-star': !isFavorite2,
+    'bi-star-fill': isFavorite2
+  }"
+    (click)="toggleFavorite2()"
+  ></i>
+</h1>

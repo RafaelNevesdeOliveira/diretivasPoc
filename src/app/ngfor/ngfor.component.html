@@ -1,1 +1,18 @@
-<p>ngfor works!</p>
+<ul>
+  <li *ngFor="let curso of cursos">{{curso.nome}}</li>
+</ul>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let curso of cursos">
+      <th scope="row">{{curso.id}}</th>
+      <td>{{curso.nome}}</td>
+    </tr>
+  </tbody>
+</table>
