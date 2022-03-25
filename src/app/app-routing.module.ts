@@ -34,8 +34,8 @@ const routes: Routes = [
     loadChildren: ()=> import('./input-property-binding/input-property-binding.module').then(m => m.InputPropertyBindingModule)
   },
   {
-    path: 'ngcontent',
-    loadChildren: ()=> import('./ngcontent/ngcontent.module').then(m => m.NgcontentModule)
+    path: 'diretivas-customizadas',
+    loadChildren: ()=> import('./diretivas-customizadas/diretivas-customizadas.module').then(m => m.DiretivasCustomizadasModule)
   },
 
 ];

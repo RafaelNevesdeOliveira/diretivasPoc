@@ -1,1 +1,37 @@
-<p>ngstyle works!</p>
+<div style="display: flex; flex-direction: column; place-items: center">
+  <h5>Styles com property binding (style binding)</h5>
+
+  <input type="text" [(ngModel)]="tamanhoFonte" />
+  <input type="text" [(ngModel)]="changeText" />
+  <button
+    class="my-4"
+    [style.backgroundColor]="isActive ? 'blue' : 'white'"
+    [style.color]="isActive ? 'white' : 'black'"
+    [style.fontWeight]="isActive ? 'bold' : 'normal'"
+    [style.fontSize]="tamanhoFonte + 'px'"
+    (click)="mudarAtivo()"
+  >
+    {{ changeText }}
+  </button>
+</div>
+
+<br />
+
+<div style="display: flex; flex-direction: column; place-items: center">
+  <h5>Styles diretiva ngStyle</h5>
+
+  <input type="text" [(ngModel)]="tamanhoFonte2" />
+  <input type="text" [(ngModel)]="changeText2" />
+  <button
+    class="my-4"
+    [ngStyle]="{
+      'background-color': (isActive2 ? 'red' : 'white'),
+      'color': (isActive2 ? 'white' : 'black'),
+      'font-weight': (isActive2 ? 'bold' : 'normal'),
+      'font-size': tamanhoFonte2 + 'px'
+    }"
+    (click)="mudarAtivo2()"
+  >
+    {{ changeText2 }}
+  </button>
+</div>

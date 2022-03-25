@@ -11,6 +11,13 @@ export class NgifComponent implements OnInit {
   mostrarCursos: any
   cursos: string[] = ['Angular', 'Java', 'C#', 'PHP']
 
+  tarefa: any = {
+    desc: 'Descrição da tarefa',
+    responsavel: {
+      usuario: null
+    }
+  }
+
   ngOnInit(): void {
   }
 

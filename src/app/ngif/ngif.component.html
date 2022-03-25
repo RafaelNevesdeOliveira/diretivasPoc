@@ -23,3 +23,13 @@
   Não existem cursos para serem listados
 </div>
 <br>
+
+<br>
+
+<h5>Operador Elvis</h5>
+<p> Descição: {{tarefa.desc}}</p>
+<p>Responsável: {{tarefa.responsavel != null ? tarefa.responsavel.nome : '' }}</p>
+
+<h6>resumindo codigo</h6>
+<p>Responsável: {{tarefa.responsavel?.usuario?.nome }}</p>
+
