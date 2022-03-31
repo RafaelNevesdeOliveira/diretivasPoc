@@ -26,10 +26,6 @@ const routes: Routes = [
     loadChildren: ()=> import('./ngswitch/ngswitch.module').then(m => m.NgswitchModule)
   },
   {
-    path: 'ngelse',
-    loadChildren: ()=> import('./ngelse/ngelse.module').then(m => m.NgelseModule)
-  },
-  {
     path: 'input-property-binding',
     loadChildren: ()=> import('./input-property-binding/input-property-binding.module').then(m => m.InputPropertyBindingModule)
   },

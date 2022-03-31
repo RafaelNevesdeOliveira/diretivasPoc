@@ -10,7 +10,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    InputPropertyBindingComponent
   ],
   imports: [
     BrowserModule,
